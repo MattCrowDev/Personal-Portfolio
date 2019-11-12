@@ -7,7 +7,7 @@
 
         <script>
         window.addEventListener("keydown", function(e) {
-    // space and arrow keys
+    //arrow keys
     if([38, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
@@ -69,7 +69,9 @@ table {
 
 .container form input {
   height: 0;
-  margin: 0 auto;
+  margin-right: auto ;
+  margin-left: auto ;
+  margin-top: -15px;
   z-index: 1;
 }
 
@@ -95,23 +97,48 @@ table {
 .container form input:after {
   content: "" attr(title) "";
   position: relative;
-  left: 30px;
+  top: 15px;
   opacity: .5;
   color: white;
   font-size: 9px;
   display: block;
   min-width: 80px;
+  margin: 0 auto;
   transition: all 0.25s linear;
+}
+
+/*centers the titles of the rd buttons*/
+.container form input:nth-of-type(1):after
+{
+  left: -7px;
+}
+.container form input:nth-of-type(2):after
+{
+  left: -12.5px;
+}
+.container form input:nth-of-type(3):after
+{
+  left: -11px;
+}
+.container form input:nth-of-type(4):after
+{
+  left: -23px;
+}
+.container form input:nth-of-type(5):after
+{
+  left: -17px;
 }
 
 .container form input:checked:after {
   opacity: 1;
-  left: 20px;
+  top: 25px;
 }
 .container form input:hover:after:not(label) {
  opacity: 1;
 }
 
+
+/*moves the pages up and down*/
 .container form input:nth-of-type(1):checked ~ .labels label {
   transform: translateY(-400%);
 }
@@ -132,33 +159,6 @@ table {
   transform: translateY(-0%);
 }
 
-/*
-.container form .labels label:nth-child(1) {
-  background-image: url(5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(2) {
-  background-image: url(4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(3) {
-  background-image: url(3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(4) {
-  background-image: url(2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(5) {
-  background-image: url(1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
 
 .container form .labels {
   position: absolute;
@@ -187,15 +187,13 @@ table {
     <div class="container">
     <form>
         <input type="radio" id="Slide5" name="slider" title="Home" checked="checked">
-        <input type="radio" id="Slide4" name="slider" title="Section 4">
-        <input type="radio" id="Slide3" name="slider" title="Section 3">
-        <input type="radio" id="Slide2" name="slider" title="Section 2">
-        <input type="radio" id="Slide1" name="slider" title="contact me">
+        <input type="radio" id="Slide4" name="slider" title="About Me">
+        <input type="radio" id="Slide3" name="slider" title="Resume">
+        <input type="radio" id="Slide2" name="slider" title="Previous Work">
+        <input type="radio" id="Slide1" name="slider" title="Contact Me">
 
 
- 
         
-
         
         <div class="labels">
         <label for="Slide1" id="Slide1" class="Slide">
