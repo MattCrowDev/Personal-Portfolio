@@ -1,0 +1,174 @@
+/* reset */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+    
+  }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+  
+  body { line-height: 1 }
+  
+  ol, ul { list-style: none }
+  
+  blockquote, q { quotes: none }
+  
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0
+  }
+  
+
+  /* main */
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: seagreen;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container form {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+  }
+  
+  .container form input {
+    height: 0;
+    margin-right: auto ;
+    margin-left: auto ;
+    margin-top: -15px;
+    z-index: 1;
+  }
+  
+  .container form input:checked {
+    outline: 0;
+    border: 0;
+  }
+  
+  .container form input:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.81);
+    border-radius: 11px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+  }
+  
+  .container form input:checked:before { background-color: white; }
+  
+  .container form input:after {
+    content: "" attr(title) "";
+    position: relative;
+    top: 15px;
+    opacity: .5;
+    color: white;
+    font-size: 9px;
+    display: block;
+    min-width: 80px;
+    margin: 0 auto;
+    transition: all 0.25s linear;
+  }
+  
+  /*centers the titles of the rd buttons*/
+  .container form input:nth-of-type(1):after
+  {
+    left: -7px;
+  }
+  .container form input:nth-of-type(2):after
+  {
+    left: -12.5px;
+  }
+  .container form input:nth-of-type(3):after
+  {
+    left: -27px;
+  }
+  .container form input:nth-of-type(4):after
+  {
+    left: -23px;
+  }
+  .container form input:nth-of-type(5):after
+  {
+    left: -17px;
+  }
+  
+  .container form input:checked:after {
+    opacity: 1;
+    top: 25px;
+  }
+  .container form input:hover:after:not(label) {
+   opacity: 1;
+  }
+  
+  
+  /*moves the pages up and down*/
+  .container form input:nth-of-type(1):checked ~ .labels label {
+    transform: translateY(-400%);
+  }
+  
+  .container form input:nth-of-type(2):checked ~ .labels label {
+    transform: translateY(-300%);
+  }
+  
+  .container form input:nth-of-type(3):checked ~ .labels label {
+    transform: translateY(-200%);
+  }
+  
+  .container form input:nth-of-type(4):checked ~ .labels label {
+    transform: translateY(-100%);
+  }
+  
+  .container form input:nth-of-type(5):checked ~ .labels label {
+    transform: translateY(-0%);
+  }
+  
+  
+  .container form .labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container form .labels label {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
+  }
+  
+  
+  
+  /*the side pages*/ 
+  
+  
