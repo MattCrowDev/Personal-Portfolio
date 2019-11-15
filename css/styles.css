@@ -38,19 +38,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: seagreen;
     position: relative;
     display: flex;
-    align-items: center;
+
   }
   
   .container form {
     box-sizing: border-box;
-    text-align: center;
+
     padding: 20px;
     display: inline-flex;
     flex-direction: row;
     position: fixed;
     height: 100vh;
     width: 100vw;
-    justify-content: center;
+
   }
   
   .container form input {
@@ -131,6 +131,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   .container form input:nth-of-type(2):checked ~ .labels label {
     transform: translateY(-300%);
+
   }
   
   .container form input:nth-of-type(3):checked ~ .labels label {
@@ -145,7 +146,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     transform: translateY(-0%);
   }
   
-  
+  /*back images*/
+  .container form .labels label:nth-child(1) {
+    background-image: url(../images/5back.jpg);
+    background-size: cover;  }
+  .container form .labels label:nth-child(2) {
+    background-image: url(../images/4back.jpg);
+    background-size: cover;  }
+  .container form .labels label:nth-child(3) {
+    background-image: url(../images/3back.jpg);
+    background-size: cover;  }
+  .container form .labels label:nth-child(4) {
+    background-image: url(../images/2back.jpg);
+    background-size: cover;
+  }
+  .container form .labels label:nth-child(5) {
+    background-image: url(../images/1back.jpg);
+    background-size: cover;
+  }
+
   .container form .labels {
     position: absolute;
     top: 0;
@@ -161,14 +180,31 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index: 0;
     transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
   }
   
   
   
-  /*the side pages*/ 
+ /*the pages layouts*/
+
+ /*home page*/
+ .home-content
+ {
+  display: grid;
+  grid-template-rows: 25vh 25vh 25vh;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-gap: 10px;
+
+  padding: 10px;
+ }
+ .home-content h1 {
+  font-size: 4em;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
   
   
