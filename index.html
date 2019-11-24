@@ -2,200 +2,29 @@
 <html>
     <head>
         <title>(OTW) Matthew Crowell Portfolio</title>
-        <link rel="stylesheet" type="text/css" href='#'>
+        <link rel="stylesheet" type="text/css" href='css/styles.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script>
         window.addEventListener("keydown", function(e) {
-    // space and arrow keys
+    //arrow keys
     if([38, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 }, false);
         </script>
-<style>
-/* reset */
-
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
-
-body { line-height: 1 }
-
-ol, ul { list-style: none }
-
-blockquote, q { quotes: none }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0
-}
-
-/* main */
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  background: sandybrown;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.container form {
-  box-sizing: border-box;
-  text-align: center;
-  padding: 20px;
-  display: inline-flex;
-  flex-direction: row;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-}
-
-.container form input {
-  height: 0;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.container form input:checked {
-  outline: 0;
-  border: 0;
-}
-
-.container form input:before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.81);
-  border-radius: 11px;
-  cursor: pointer;
-  transition: all 0.25s linear;
-}
-
-.container form input:checked:before { background-color: white; }
-
-.container form input:after {
-  content: "" attr(title) "";
-  position: relative;
-  left: 30px;
-  opacity: .5;
-  color: white;
-  font-size: 9px;
-  display: block;
-  min-width: 80px;
-  transition: all 0.25s linear;
-}
-
-.container form input:checked:after {
-  opacity: 1;
-  left: 20px;
-}
-.container form input:hover:after:not(label) {
- opacity: 1;
-}
-
-.container form input:nth-of-type(1):checked ~ .labels label {
-  transform: translateY(-400%);
-}
-
-.container form input:nth-of-type(2):checked ~ .labels label {
-  transform: translateY(-300%);
-}
-
-.container form input:nth-of-type(3):checked ~ .labels label {
-  transform: translateY(-200%);
-}
-
-.container form input:nth-of-type(4):checked ~ .labels label {
-  transform: translateY(-100%);
-}
-
-.container form input:nth-of-type(5):checked ~ .labels label {
-  transform: translateY(-0%);
-}
-
-/*
-.container form .labels label:nth-child(1) {
-  background-image: url(5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(2) {
-  background-image: url(4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(3) {
-  background-image: url(3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(4) {
-  background-image: url(2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container form .labels label:nth-child(5) {
-  background-image: url(1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
-
-.container form .labels {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.container form .labels label {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-  transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
-}
-
-</style>
     </head>
 <body>
     <div class="container">
     <form>
         <input type="radio" id="Slide5" name="slider" title="Home" checked="checked">
-        <input type="radio" id="Slide4" name="slider" title="Section 4">
-        <input type="radio" id="Slide3" name="slider" title="Section 3">
-        <input type="radio" id="Slide2" name="slider" title="Section 2">
-        <input type="radio" id="Slide1" name="slider" title="contact me">
+        <input type="radio" id="Slide4" name="slider" title="About Me">
+        <input type="radio" id="Slide3" name="slider" title="Skills & Resume">
+        <input type="radio" id="Slide2" name="slider" title="Previous Work">
+        <input type="radio" id="Slide1" name="slider" title="Contact Me">
 
 
- 
         
-
         
         <div class="labels">
         <label for="Slide1" id="Slide1" class="Slide">
@@ -215,13 +44,14 @@ table {
         </label>
         <label for="Slide4" id="Slide4" class="Slide">
         <div class="content">
-            <h2>Section 4</h2>
+            <h1>Section 4</h1>
         </div>
         </label>
         <label for="Slide5" id="Slide5" class="Slide">
-        <div class="content">
-            <h2>hell0 hi</h2>
+        <div class="home-content">
+            <h1>Matthew Crowell</h1>
         </div>
+        
         </label>
         </div>
     </form>
