@@ -208,3 +208,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
   
   
+
+
+/*Resume Page*/
+.resume h1
+{
+  font-size: 2em;
+  font-weight: bolder;
+}
+.resume h2
+{
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+.resume h3
+{
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+.resume header
+{
+  text-align: center;
+}
+.resume table
+{
+  width: 100%;
+  text-align: center;
+}
+td
+{
+  width: 33%;
+  display: table-cell;
+}
+.resume
+{
+
+  max-width: 650px;
+  margin: auto;
+  border: 2px black solid;
+  padding-right: 10%;
+  padding-left: 10%;
+}
