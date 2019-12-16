@@ -2,60 +2,73 @@
 <html>
     <head>
         <title>(OTW) Matthew Crowell Portfolio</title>
+        <link rel="stylesheet" type="text/css" href='css/reset.css'>
         <link rel="stylesheet" type="text/css" href='css/styles.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script>
-        window.addEventListener("keydown", function(e) {
-        //arrow keys
-        if([38, 40].indexOf(e.keyCode) > -1) {
-            e.preventDefault();
-        }
-        }, false);
-        </script>
     </head>
-<body>
-    <div class="container">
-    <form>
-        <input type="radio" id="Slide5" name="slider" title="Home" checked="checked">
-        <input type="radio" id="Slide4" name="slider" title="About Me">
-        <input type="radio" id="Slide3" name="slider" title="Skills & Resume">
-        <input type="radio" id="Slide2" name="slider" title="Previous Work">
-        <input type="radio" id="Slide1" name="slider" title="Contact Me">
-        
+    <body class="index">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Skills & Resume</a></li>
+                    <li><a href="#prior-work">Previous Work</a></li>
+                    <li><a href="#contact">Contact ME</a></li>
+                </ul>
+            </nav>
+            <section id="contact">
+                     
 
+            </section>
+            <section id="prior-work">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="prior-text">
+                                <h1>Prior Work</h1>
+                                <p></p>
+                            </div>
+                        </td>
+                        <td><a href="prior-work.html"><img class="examples" src="images/2back.jpg" alt=""></a></td>
+                    </tr>
 
-        
-        
-        <div class="labels">
-        <label for="Slide1" id="Slide1" class="Slide">
-        <div class="content">
-            <h1>section 1</h1>
-        </div>
-        </label>
-        <label for="Slide2" id="Slide2" class="Slide">
-        <div class="content">
-            <h2>Section 2</h2>
-        </div>
-        </label>
-        <label for="Slide3" id="Slide3" class="Slide">
-        <div class="content">
-            <h2> <a href="resume.html"> resume</a> </h2>
-        </div>
-        </label>
-        <label for="Slide4" id="Slide4" class="Slide">
-        <div class="content">
-            <h1>Section 4</h1>
-        </div>
-        </label>
-        <label for="Slide5" id="Slide5" class="Slide">
-        <div class="home-content">
-            <h1>Matthew Crowell</h1>
-        </div>
-        
-        </label>
-        </div>
-    </form>
-    </div>
-</body>
+                </table>
+            </section>
+                
+            <section id="resume">
+                <table>
+                    <tr>
+                        <td colspan="2" class="grph">
+                            <div class="graph-cont">
+                                <p>HTML</p>
+                                <div class="bar bar1"></div>
+                                <p>CSS</p>
+                                <div class="bar bar2"></div>
+                                <p>Javascript</p>
+                                <div class="bar bar3"></div>
+                                <p>Ability and desire to learn and grow</p>
+                                <div class="bar bar4"></div>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>
+
+                            </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="about">
+                    <h1>About</h1>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+                </section>
+            <section id="home">
+                <h1>Welcome To My Site</h1>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+            </section>
+        </div>   
+    </body>
 </html>
