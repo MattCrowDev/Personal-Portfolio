@@ -122,7 +122,7 @@ section h1 {
   width: 100%;
   text-align: center;
 }
-td
+.index td
 {
   width: 33%;
   display: table-cell;
@@ -216,7 +216,7 @@ td
 }
 
 
-table
+.index table
 {
   height: 100vh;
   width: 100vw;
@@ -239,7 +239,7 @@ table
 }
 td
 {
-  border: black 2px double;
+
 
 }
 
