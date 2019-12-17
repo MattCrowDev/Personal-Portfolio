@@ -122,11 +122,6 @@ section h1 {
   width: 100%;
   text-align: center;
 }
-.index td
-{
-  width: 33%;
-  display: table-cell;
-}
 .resume-body
 {
   padding-top: 100px;
@@ -237,10 +232,136 @@ section h1 {
   height: 80%;
   width: 70%;
 }
-td
+.pfp
 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: auto;
+}
+.profile
+{
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  margin: auto;
+  width: 70%;
+  
+}
+.column1{
+  text-align: center;
+}
 
+.column1 {
+  float: left;
+  width: 70%;
+  margin-top: 60px; box-sizing: border-box;
+}
+.column2 {
+  float: left;
+  width: 30%;
+  margin-top: 80px; box-sizing: border-box;
+}
+.column3 {
+  text-align: center;
+  float: left;
+  width: 50%;
+  margin-top: 80px; box-sizing: border-box;
+}
+.column4 {
+  text-align: center;
+  float: left;
+  width: 50%;
+  margin-top: 80px; box-sizing: border-box;
+}
+.column3 p
+{
+  color: white;
+  margin:auto;
+}
+.column3 img
+{
+  margin-right: auto;
+  margin-left: auto;
+  height: 70vh;
+
+}
+.column4 img
+{
+  margin-right: auto;
+  margin-left: auto;
+  height: 50vh;
 
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; box-sizing: border-box;
+}
+.row
+{
+  height: 100vh;
+}
+.index p
+{
+  font-size: 1.5em;
+}
+.index h2{
+  font-size: 3em;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+.container
+{
+  margin-top: 60px;
+}
+.prior-work
+{
+  background-image: url(../images/4back.jpg);
+  background-size: cover;
+}
+.prior-work h2{
+  font-size: 3em;
+}
+.prior-work a{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+}
+.home{
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+}
+.resume a
+{
+  text-decoration: none;
+  color: white;
+}
+h4
+{font-size: 5em;
+color: white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
